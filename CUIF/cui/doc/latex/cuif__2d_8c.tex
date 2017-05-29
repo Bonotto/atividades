@@ -1,0 +1,60 @@
+\hypertarget{cuif__2d_8c}{\section{src/cuif\+\_\+2d.c File Reference}
+\label{cuif__2d_8c}\index{src/cuif\+\_\+2d.\+c@{src/cuif\+\_\+2d.\+c}}
+}
+{\ttfamily \#include \char`\"{}cuif\+\_\+2d.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structcuif__2d__image__t}{cuif\+\_\+2d\+\_\+image\+\_\+t} $\ast$ \hyperlink{cuif__2d_8c_a744569680a46cf4fb02dd1fa038607b5}{cuif\+\_\+2d\+\_\+image\+\_\+new} (uint8\+\_\+t version, uint8\+\_\+t channels, uint32\+\_\+t width, uint32\+\_\+t height)
+\begin{DoxyCompactList}\small\item\em Creates a new 2d cuif. \end{DoxyCompactList}\item 
+\hypertarget{cuif__2d_8c_ae693b618a98a3c80ba17925133d8e2c2}{\hyperlink{structcuif__2d__image__t}{cuif\+\_\+2d\+\_\+image\+\_\+t} $\ast$ {\bfseries cuif\+\_\+2d\+\_\+image\+\_\+new\+\_\+with\+\_\+header} (\hyperlink{structcuif__header__t}{cuif\+\_\+header\+\_\+t} $\ast$header)}\label{cuif__2d_8c_ae693b618a98a3c80ba17925133d8e2c2}
+
+\item 
+void \hyperlink{cuif__2d_8c_a57af1e85ff50c439aa10981f7e539fdc}{cuif\+\_\+2d\+\_\+image\+\_\+free} (\hyperlink{structcuif__2d__image__t}{cuif\+\_\+2d\+\_\+image\+\_\+t} $\ast$cuif\+\_\+2d\+\_\+image)
+\begin{DoxyCompactList}\small\item\em Frees the (m)allocated memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\+: ismaelseidel \+: 2016-\/08-\/09 15\+:28\+:48  Modified by\+: ismaelseidel  Modified time\+: 2016-\/08-\/10 21\+:34\+:10 
+
+\subsection{Function Documentation}
+\hypertarget{cuif__2d_8c_a57af1e85ff50c439aa10981f7e539fdc}{\index{cuif\+\_\+2d.\+c@{cuif\+\_\+2d.\+c}!cuif\+\_\+2d\+\_\+image\+\_\+free@{cuif\+\_\+2d\+\_\+image\+\_\+free}}
+\index{cuif\+\_\+2d\+\_\+image\+\_\+free@{cuif\+\_\+2d\+\_\+image\+\_\+free}!cuif\+\_\+2d.\+c@{cuif\+\_\+2d.\+c}}
+\subsubsection[{cuif\+\_\+2d\+\_\+image\+\_\+free}]{\setlength{\rightskip}{0pt plus 5cm}void cuif\+\_\+2d\+\_\+image\+\_\+free (
+\begin{DoxyParamCaption}
+\item[{{\bf cuif\+\_\+2d\+\_\+image\+\_\+t} $\ast$}]{cuif\+\_\+2d\+\_\+image}
+\end{DoxyParamCaption}
+)}}\label{cuif__2d_8c_a57af1e85ff50c439aa10981f7e539fdc}
+
+
+Frees the (m)allocated memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cuif\+\_\+2d\+\_\+image} & The cuif 2 d image \\
+\hline
+\end{DoxyParams}
+\hypertarget{cuif__2d_8c_a744569680a46cf4fb02dd1fa038607b5}{\index{cuif\+\_\+2d.\+c@{cuif\+\_\+2d.\+c}!cuif\+\_\+2d\+\_\+image\+\_\+new@{cuif\+\_\+2d\+\_\+image\+\_\+new}}
+\index{cuif\+\_\+2d\+\_\+image\+\_\+new@{cuif\+\_\+2d\+\_\+image\+\_\+new}!cuif\+\_\+2d.\+c@{cuif\+\_\+2d.\+c}}
+\subsubsection[{cuif\+\_\+2d\+\_\+image\+\_\+new}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cuif\+\_\+2d\+\_\+image\+\_\+t}$\ast$ cuif\+\_\+2d\+\_\+image\+\_\+new (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{version, }
+\item[{uint8\+\_\+t}]{channels, }
+\item[{uint32\+\_\+t}]{width, }
+\item[{uint32\+\_\+t}]{height}
+\end{DoxyParamCaption}
+)}}\label{cuif__2d_8c_a744569680a46cf4fb02dd1fa038607b5}
+
+
+Creates a new 2d cuif. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em width} & The width \\
+\hline
+\mbox{\tt in}  & {\em height} & The height\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the recently created 2d cuif 
+\end{DoxyReturn}

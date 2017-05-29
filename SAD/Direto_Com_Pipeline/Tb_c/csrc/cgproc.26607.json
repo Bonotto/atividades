@@ -1,0 +1,43 @@
+{
+    "ObjArchives": [
+        {
+            "archive": "archive.97/_26607_archive_1.a",
+            "objects": [
+                [
+                    "iAVhC_d.o",
+                    194304
+                ]
+            ],
+            "size": 194304
+        }
+    ],
+    "Modules": {
+        "abs_difference": {
+            "Compiled": "Yes",
+            "Compiled Times": 98
+        },
+        "...MASTER...": {},
+        "testbench": {
+            "Compiled": "Yes",
+            "Compiled Times": 98
+        }
+    },
+    "reusePaths": {
+        "amcQw_d": {
+            "icPath": "csrc"
+        },
+        "yfJhQ_d": {
+            "icPath": "csrc"
+        }
+    },
+    "CompUnits": {
+        "iAVhC_d": {
+            "mod": "testbench",
+            "bytes": 194304,
+            "out": "iAVhC_d.o",
+            "checksum": 0,
+            "mode": 4,
+            "archive": "archive.97/_26607_archive_1.a"
+        }
+    }
+}

@@ -1,0 +1,47 @@
+\hypertarget{bitmap_8c}{\section{src/bitmap.c File Reference}
+\label{bitmap_8c}\index{src/bitmap.\+c@{src/bitmap.\+c}}
+}
+{\ttfamily \#include \char`\"{}bitmap.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structbitmap__t}{bitmap\+\_\+t} $\ast$ \hyperlink{bitmap_8c_a64ed30f407e32e2025fdbd8cb57f6460}{bitmap\+\_\+new} ()
+\begin{DoxyCompactList}\small\item\em Creates a new bitmap (through (m)alloc) \end{DoxyCompactList}\item 
+void \hyperlink{bitmap_8c_a3491822ddb125ba62eda54c555d03794}{bitmap\+\_\+free} (\hyperlink{structbitmap__t}{bitmap\+\_\+t} $\ast$bitmap)
+\begin{DoxyCompactList}\small\item\em This function frees the bitmap from the memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\+: ismaelseidel \+: 2016-\/08-\/10 21\+:56\+:11  Modified by\+: ismaelseidel  Modified time\+: 2016-\/08-\/11 19\+:13\+:28 
+
+\subsection{Function Documentation}
+\hypertarget{bitmap_8c_a3491822ddb125ba62eda54c555d03794}{\index{bitmap.\+c@{bitmap.\+c}!bitmap\+\_\+free@{bitmap\+\_\+free}}
+\index{bitmap\+\_\+free@{bitmap\+\_\+free}!bitmap.\+c@{bitmap.\+c}}
+\subsubsection[{bitmap\+\_\+free}]{\setlength{\rightskip}{0pt plus 5cm}void bitmap\+\_\+free (
+\begin{DoxyParamCaption}
+\item[{{\bf bitmap\+\_\+t} $\ast$}]{bitmap}
+\end{DoxyParamCaption}
+)}}\label{bitmap_8c_a3491822ddb125ba62eda54c555d03794}
+
+
+This function frees the bitmap from the memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bitmap} & Pointer to the bitmap that should be freed \\
+\hline
+\end{DoxyParams}
+\hypertarget{bitmap_8c_a64ed30f407e32e2025fdbd8cb57f6460}{\index{bitmap.\+c@{bitmap.\+c}!bitmap\+\_\+new@{bitmap\+\_\+new}}
+\index{bitmap\+\_\+new@{bitmap\+\_\+new}!bitmap.\+c@{bitmap.\+c}}
+\subsubsection[{bitmap\+\_\+new}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bitmap\+\_\+t}$\ast$ bitmap\+\_\+new (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{bitmap_8c_a64ed30f407e32e2025fdbd8cb57f6460}
+
+
+Creates a new bitmap (through (m)alloc) 
+
+\begin{DoxyReturn}{Returns}
+The newly (m)allocated bitmap, with a all zeroed header and N\+U\+L\+L pixel array 
+\end{DoxyReturn}

@@ -1,0 +1,53 @@
+Warning: Layer 'M1' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'M2' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'M3' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'M4' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'M5' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'M6' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'M7' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'M8' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'M9' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'M10' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'AP' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+ 
+****************************************
+Report : area
+Design : top_level
+Version: L-2016.03-SP1
+Date   : Sat Mar 11 14:10:58 2017
+****************************************
+
+Library(s) Used:
+
+    tcbn45gsbwptc_ccs (File: /home/library/tsmc_library/45nm/nominal_vt/digital/Front_End/timing_power_noise/CCS/tcbn45gsbwp_120a/tcbn45gsbwptc_ccs.db)
+
+Number of ports:                          531
+Number of nets:                          4162
+Number of cells:                         3404
+Number of combinational cells:           2852
+Number of sequential cells:               552
+Number of macros/black boxes:               0
+Number of buf/inv:                        581
+Number of references:                      33
+
+Combinational area:               3852.752506
+Buf/Inv area:                      312.757210
+Noncombinational area:            1965.625265
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  5818.377772
+Total area:                 undefined
+
+Core Area:                      9852
+Aspect Ratio:                 1.0057
+Utilization Ratio:            0.5905
+
+
+The above information was reported from the logical library. The following are from the physical library:
+
+  Total moveable cell area: 5818.4
+  Total fixed cell area: 0.0
+  Total physical cell area: 5818.4
+ Core area: 0.000, 0.000, 98.980, 99.540
+1

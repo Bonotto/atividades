@@ -1,0 +1,4 @@
+./tb.v
+/home/library/tsmc_library/45nm/nominal_vt/digital/Front_End/verilog/tcbn45gsbwp_120a/tcbn45gsbwp.v
+SATD_netlist.v
+../../testbench/tree4stages/testbenchHandler.c

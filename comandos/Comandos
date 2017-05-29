@@ -1,0 +1,140 @@
+apt-get install "nome_do_app"
+
+su - terminal como adm
+
+montahomesagi - cria o diretório na sagitarius
+
+ssh -x bonotto@150.162.57.234
+
+scp "file" "user"@"server":"path"
+
+scp -r "folder" etc...
+
+sshfs "user"@"server":"remote path" "local path"
+
+alias "name" = "command"
+
+compilar arquivo em c ou c++: g++ -std=c++11 gen_vector.cpp (para executar basta rodar o arquivo a.out)
+
+SINTESE: quando for fazer a sintese dos arquivos, tem que alterar o arquivo generatescripts para que cada uma das arquiteturas tenha um case e seus arquivos sejam gerados corretamente. Inserir o nome de todas as arquiteturas nos cabeçalhos dos arquivos ("arch" é o nome das pastas dentro da pasta architecture e designname é o nome do topo dos arquivos da arquitetura) depois executar o comando ssh -x "user"@150.162.57.234 e executar o gen_all.
+
+Para utilizar a ferramenta vcs da synopisis basta achar o arquivo .profile na home da sagitarius - rodar o comando "cat .profile" para que seja pego o arquivo oculto. Logo após rodar o comando nano .profile para poder editar o arquivo e adicionar os seguintes três comandos ao final do arquivo:
+
+export VCS_HOME=/usr/synopsys/vcs_L-2016.06
+export PATH=${PATH}:${VCS_HOME}/bin
+export VCS_ARCH_OVERRIDE=linux
+
+PARA FAZER A SINTESE E SIMULACAO COM UMA ARQUITETURA JA COMPILADA E TESTADA:
+
+Criar uma pasta para a arquitetura e colocar os arquivos necessários;
+Criar uma pasta no modelo VCS e colocar o testbench;
+Criar a pasta da arquitetura na pasta toCompiltion;
+Atualizar o arquivo testebenchHandler na pasta Handler caso necessário;
+Atualizar o cabeçalho dos arquivos de acordo com a arquitetura a ser sintetizada e simulada, não se esquecendo de criar um case no arquivo generatescript.sh;
+Caso der erro entrar na pasta vcs e verificar o log.
+
+Para compilar os arquivos verilog e C com o VCS basta rodar o comando: vcs -full64 -debug_all -P pli.tab -f filelist
+
+IP’s
+ELC:
+Sagittarius: 150.162.57.234
+Sirius: 150.162.57.254 (porta 2200)
+*Máquinas locais: A Sirius não resolve o endereço com “machine.local”. Uma solução é acessar a Sagittarius, depois a máquina usando o nome “máquina.local” e verificar manualmente o IP com ifconfig. 
+
+COMANDOS BASH:
+renomear multiplos arquivos
+rename ‘s/atual/novo/’ *.files
+
+Setar uso de bash em máquinas tipo Paçoca (usam dash por default)
+exec /bin/bash --login
+
+Codificar um ideo
+Sagitarius/home/bonotto/tests/synthesisBonotto/trunk/bin/TAppEncoderStatic -c /home/RAW/cfg/encoder_randomaccess_main.cfg -c /home/RAW/cfg/persample/BasketballPass.cfg -q 22 -f 10 | tee -a loghm
+
+____________________________________________________________________
+SSH
+conectar em uma maquina
+ssh -X -p porta user@server
+-X: exporta interface gráfica
+-p: especifica porta
+server= ip ou “maquina”.local
+
+montar pasta
+    sshfs bonotto@150.162.57.234:/ ./Sagitarius
+
+copiar entre máquinas diferentes (exemplo scp)
+scp -P porta -r  user@server:/origem /destino
+_____________________________________________________________________________
+Verilog
+Compilar: iverilog -g2005 -Wall -o test *.v
+Executar testBench: vvp test | tee logVVP.txt
+Abrir wave.vcd com gtkwave para “depurar”.
+        wave.vcd é gerado com comandos no testBench.v:
+$dumpfile ("wave.vcd");
+            $dumpvars;
+preencher fio genérico com 1’s: “ {WIDTH{1'b1}} ”
+_________________________________________________________________________
+VC
+iniciar gui
+exportar “-gui” se for iniciar o vcs
+    “start gui” se já estiver dentro do vc
+
+_________________________________________________________________________
+
+
+Grid5000
+básico
+sincronizar home entre sites diferentes
+rsync -n --delete -avz ~ frontend.site.grid5000.fr:~
+
+ssh user@access.grid5000.fr
+scp file user@access.grid5000.fr:~/grenoble/
+ssh frontend
+
+digitalis: frontend NUMA em grenoble
+
+para tentar reservar a máquina:
+no digitalis: oarsub -I -p "machine = 'nome'"
+geral: oarsub -I -l nodes=X,walltime=HH:MM:SS -t deploy
+Obs.:     -I  - Modo interativo
+    -t deploy - Permite que seja colocada uma imagem de SO no nodo
+-p “cluster=’nome_cluster’”  - Pede reserva de um tipo de nodo específico
+ex: “cluster=’edel’”
+
+uid=11940(ldelorenzicancellier) gid=8000(users) groups=8000(users),9004(user),9024(ml-users),15000(grenoble)
+
+gcc (Debian 4.7.2-5) 4.7.2
+
+
+
+GIT
+Comparar com meld: “git difftool -b -d branch1 branch2“
+
+_________________________________________________________________________
+Setup para logar em usuário automaticamente (sem precisar de senha)
+Você é o usuário a da máquina A e quer acessar b da máquina B sem precisar autenticar
+
+ssh-keygen
+ssh-copy-id -i ~/.ssh/id_rsa.pub remote-host
+ssh remote-host
+seja feliz :D
+a@A:~> ssh b@B
+
+ssh-add , se der problema
+_________________________________________________________________________
+Caso:
+Você é o usuário a da máquina A e quer que o usuário b da máquina B possa acessá-lo sem autenticação
+1- gere um par de chaves:
+ssh-keygen -t rsa
+2- copie o par para cada filho b
+    scp ~/.ssh/chave.pub b@B:~/.ssh/key.pub
+scp ~/.ssh/chave b@B:~/.ssh/key
+3- coloque a chave pública na lista de authorized_key
+    ssh b@B “cat ~/.ssh/key.pub ~/.ssh/authorized_keys”
+4- Faça isso na máquina local também 
+    CUIDADO: você estará dando permissão de acesso de todos para todos. lembre-se de remover as chaves da lista de authorized keys
+
+5- Mágicas necessárias para o procedimento aqui:
+    ssh-keyscan -H -t rsa B >>~/.ssh/known_hosts
+ssh-keyscan -H -t rsa A >> ~/.ssh/known_hosts
+scp ~/.ssh/known_hosts ~/.ssh/chaves* b@B:~/.ssh/

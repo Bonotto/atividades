@@ -1,0 +1,202 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 1
+        -transition_time
+Design : top_level
+Version: L-2016.03-SP1
+Date   : Sat Mar 11 14:06:02 2017
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: NCCOM   Library: tcbn45gsbwptc_ccs
+Wire Load Model Mode: Inactive.
+
+  Startpoint: b_SAD_4x8/reg_can_31_reg[0]
+              (rising edge-triggered flip-flop clocked by CLOCK)
+  Endpoint: b_SAD_4x8/reg_total_sum_reg[11]
+            (rising edge-triggered flip-flop clocked by CLOCK)
+  Path Group: CLOCK
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock CLOCK (rise edge)                                           0.00       0.00
+  clock network delay (ideal)                                       1.12       1.12
+  b_SAD_4x8/reg_can_31_reg[0]/CP (DFQD1BWP)               0.48      0.00       1.12 r
+  b_SAD_4x8/reg_can_31_reg[0]/Q (DFQD1BWP)                0.01      0.14       1.26 f
+  b_SAD_4x8/reg_can_31[0] (net)                 2                   0.00       1.26 f
+  U819/ZN (INVD0BWP)                                      0.02      0.02 *     1.27 r
+  n1033 (net)                                   2                   0.00       1.27 r
+  U820/ZN (NR2XD0BWP)                                     0.02      0.02 *     1.30 f
+  n557 (net)                                    3                   0.00       1.30 f
+  U1162/ZN (MAOI222D0BWP)                                 0.05      0.04 *     1.33 r
+  n667 (net)                                    2                   0.00       1.33 r
+  U1163/ZN (MAOI222D0BWP)                                 0.05      0.05 *     1.38 f
+  n747 (net)                                    2                   0.00       1.38 f
+  U1165/ZN (MAOI222D0BWP)                                 0.07      0.05 *     1.44 r
+  n598 (net)                                    2                   0.00       1.44 r
+  U1166/ZN (MAOI222D0BWP)                                 0.05      0.05 *     1.48 f
+  n1833 (net)                                   2                   0.00       1.48 f
+  U1167/ZN (MAOI222D0BWP)                                 0.05      0.04 *     1.53 r
+  n556 (net)                                    1                   0.00       1.53 r
+  U1168/ZN (INVD0BWP)                                     0.02      0.02 *     1.54 f
+  n1462 (net)                                   2                   0.00       1.54 f
+  U1170/ZN (OAI32D0BWP)                                   0.07      0.04 *     1.59 r
+  n2434 (net)                                   2                   0.00       1.59 r
+  U1173/ZN (NR2XD0BWP)                                    0.04      0.04 *     1.62 f
+  n1835 (net)                                   6                   0.00       1.62 f
+  U1174/ZN (INVD0BWP)                                     0.06      0.05 *     1.67 r
+  n2432 (net)                                   8                   0.00       1.67 r
+  U2123/ZN (AOI22D0BWP)                                   0.04      0.04 *     1.71 f
+  n750 (net)                                    1                   0.00       1.71 f
+  U2125/Z (XOR2D0BWP)                                     0.03      0.05 *     1.76 r
+  n751 (net)                                    2                   0.00       1.76 r
+  U2126/ZN (NR2XD0BWP)                                    0.03      0.02 *     1.78 f
+  DP_OP_329J1_154_804/n269 (net)                2                   0.00       1.78 f
+  U2127/ZN (AOI21D0BWP)                                   0.05      0.05 *     1.83 r
+  DP_OP_329J1_154_804/n270 (net)                1                   0.00       1.83 r
+  DP_OP_329J1_154_804/U92/S (CMPE42D1BWP)                 0.02      0.10 *     1.93 f
+  DP_OP_329J1_154_804/n247 (net)                1                   0.00       1.93 f
+  DP_OP_329J1_154_804/U88/S (CMPE42D1BWP)                 0.02      0.13 *     2.05 f
+  DP_OP_329J1_154_804/n235 (net)                1                   0.00       2.05 f
+  DP_OP_329J1_154_804/U87/S (CMPE42D1BWP)                 0.02      0.13 *     2.18 f
+  DP_OP_329J1_154_804/n232 (net)                1                   0.00       2.18 f
+  DP_OP_329J1_154_804/U86/S (CMPE42D1BWP)                 0.02      0.05 *     2.23 r
+  DP_OP_329J1_154_804/n229 (net)                1                   0.00       2.23 r
+  U3501/CO (FA1D0BWP)                                     0.02      0.06 *     2.29 r
+  n2453 (net)                                   1                   0.00       2.29 r
+  U3503/CO (FA1D0BWP)                                     0.02      0.04 *     2.33 r
+  n2455 (net)                                   1                   0.00       2.33 r
+  U3505/CO (FA1D0BWP)                                     0.02      0.04 *     2.36 r
+  n2457 (net)                                   1                   0.00       2.36 r
+  U3507/CO (FA1D0BWP)                                     0.02      0.04 *     2.40 r
+  n2459 (net)                                   1                   0.00       2.40 r
+  U3509/CO (FA1D0BWP)                                     0.02      0.04 *     2.44 r
+  n2461 (net)                                   1                   0.00       2.44 r
+  U3511/CO (FA1D0BWP)                                     0.02      0.04 *     2.47 r
+  n2463 (net)                                   1                   0.00       2.47 r
+  U3513/CO (FA1D0BWP)                                     0.02      0.04 *     2.51 r
+  n2465 (net)                                   1                   0.00       2.51 r
+  U3515/CO (FA1D0BWP)                                     0.03      0.04 *     2.55 r
+  n1840 (net)                                   3                   0.00       2.55 r
+  U3048/ZN (NR2XD0BWP)                                    0.02      0.02 *     2.57 f
+  n2467 (net)                                   2                   0.00       2.57 f
+  U3517/ZN (AOI21D0BWP)                                   0.04      0.04 *     2.61 r
+  n2471 (net)                                   2                   0.00       2.61 r
+  U3518/ZN (NR2XD0BWP)                                    0.02      0.02 *     2.63 f
+  n2469 (net)                                   1                   0.00       2.63 f
+  U3519/ZN (AOI211XD0BWP)                                 0.05      0.03 *     2.66 r
+  b_SAD_4x8/N916 (net)                          1                   0.00       2.66 r
+  b_SAD_4x8/reg_total_sum_reg[11]/D (EDFQD1BWP)           0.05      0.00 *     2.66 r
+  data arrival time                                                            2.66
+
+  clock CLOCK (rise edge)                                          16.00      16.00
+  clock network delay (ideal)                                       1.12      17.12
+  clock uncertainty                                                -1.60      15.52
+  b_SAD_4x8/reg_total_sum_reg[11]/CP (EDFQD1BWP)                    0.00      15.52 r
+  library setup time                                               -0.02      15.50
+  data required time                                                          15.50
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                          15.50
+  data arrival time                                                           -2.66
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                 12.84
+
+
+  Startpoint: ack (input port clocked by CLOCK)
+  Endpoint: b_control/state_reg[0]
+            (rising edge-triggered flip-flop clocked by CLOCK)
+  Path Group: REGIN
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock CLOCK (rise edge)                                           0.00       0.00
+  clock network delay (ideal)                                       1.12       1.12
+  input external delay                                              9.60      10.72 f
+  ack (in)                                                0.01      0.00      10.72 f
+  ack (net)                                     1                   0.00      10.72 f
+  U3393/ZN (IOA21D0BWP)                                   0.03      0.03 *    10.75 f
+  n2150 (net)                                   2                   0.00      10.75 f
+  U3395/ZN (IOA21D0BWP)                                   0.02      0.02 *    10.77 r
+  b_control/N30 (net)                           1                   0.00      10.77 r
+  b_control/state_reg[0]/D (DFCND1BWP)                    0.02      0.00 *    10.77 r
+  data arrival time                                                           10.77
+
+  clock CLOCK (rise edge)                                          16.00      16.00
+  clock network delay (ideal)                                       1.12      17.12
+  clock uncertainty                                                -1.60      15.52
+  b_control/state_reg[0]/CP (DFCND1BWP)                             0.00      15.52 r
+  library setup time                                                0.03      15.55
+  data required time                                                          15.55
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                          15.55
+  data arrival time                                                          -10.77
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                  4.78
+
+
+  Startpoint: b_control/state_reg[1]
+              (rising edge-triggered flip-flop clocked by CLOCK)
+  Endpoint: done (output port clocked by CLOCK)
+  Path Group: REGOUT
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock CLOCK (rise edge)                                           0.00       0.00
+  clock network delay (ideal)                                       1.12       1.12
+  b_control/state_reg[1]/CP (DFCNQD1BWP)                  0.48      0.00       1.12 r
+  b_control/state_reg[1]/Q (DFCNQD1BWP)                   0.23      0.25       1.37 r
+  b_control/state[1] (net)                     61                   0.00       1.37 r
+  U2256/Z (BUFFD1BWP)                                     0.03      0.05 *     1.42 r
+  n2501 (net)                                   6                   0.00       1.42 r
+  U2257/ZN (INVD0BWP)                                     0.08      0.06 *     1.48 f
+  n2502 (net)                                  20                   0.00       1.48 f
+  U3520/ZN (NR2XD0BWP)                                    0.19      0.13 *     1.62 r
+  done (net)                                    1                   0.00       1.62 r
+  done (out)                                              0.19      0.00 *     1.62 r
+  data arrival time                                                            1.62
+
+  clock CLOCK (rise edge)                                          16.00      16.00
+  clock network delay (ideal)                                       1.12      17.12
+  clock uncertainty                                                -1.60      15.52
+  output external delay                                            -9.60       5.92
+  data required time                                                           5.92
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                           5.92
+  data arrival time                                                           -1.62
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                  4.30
+
+
+1

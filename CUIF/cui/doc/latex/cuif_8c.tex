@@ -1,0 +1,68 @@
+\hypertarget{cuif_8c}{\section{src/cuif.c File Reference}
+\label{cuif_8c}\index{src/cuif.\+c@{src/cuif.\+c}}
+}
+{\ttfamily \#include \char`\"{}cuif.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{cuif_8c_a633e0267ecfe86384bdcc561ab2f477d}{cuif\+\_\+init\+\_\+header} (\hyperlink{structcuif__header__t}{cuif\+\_\+header\+\_\+t} $\ast$header, uint8\+\_\+t version, uint8\+\_\+t channels, uint32\+\_\+t width, uint32\+\_\+t height)
+\begin{DoxyCompactList}\small\item\em Initializes the header with the informed paramenters. \end{DoxyCompactList}\item 
+void \hyperlink{cuif_8c_acbd01cc83095cfe1a45edfdb59cbd283}{cuif\+\_\+add\+\_\+student\+\_\+ids\+\_\+in\+\_\+header} (\hyperlink{structcuif__header__t}{cuif\+\_\+header\+\_\+t} $\ast$header, const uint32\+\_\+t $\ast$list\+\_\+of\+\_\+ids)
+\begin{DoxyCompactList}\small\item\em \{ function\+\_\+description \} \end{DoxyCompactList}\item 
+\hypertarget{cuif_8c_a0cf111600e4c4b6be09fe02fa53545d7}{bool {\bfseries cuif\+\_\+copy\+\_\+header} (const \hyperlink{structcuif__header__t}{cuif\+\_\+header\+\_\+t} $\ast$from, \hyperlink{structcuif__header__t}{cuif\+\_\+header\+\_\+t} $\ast$to)}\label{cuif_8c_a0cf111600e4c4b6be09fe02fa53545d7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\+: ismaelseidel \+: 2016-\/08-\/08 21\+:47\+:59  Modified by\+: ismaelseidel  Modified time\+: 2016-\/08-\/11 19\+:15\+:19 
+
+\subsection{Function Documentation}
+\hypertarget{cuif_8c_acbd01cc83095cfe1a45edfdb59cbd283}{\index{cuif.\+c@{cuif.\+c}!cuif\+\_\+add\+\_\+student\+\_\+ids\+\_\+in\+\_\+header@{cuif\+\_\+add\+\_\+student\+\_\+ids\+\_\+in\+\_\+header}}
+\index{cuif\+\_\+add\+\_\+student\+\_\+ids\+\_\+in\+\_\+header@{cuif\+\_\+add\+\_\+student\+\_\+ids\+\_\+in\+\_\+header}!cuif.\+c@{cuif.\+c}}
+\subsubsection[{cuif\+\_\+add\+\_\+student\+\_\+ids\+\_\+in\+\_\+header}]{\setlength{\rightskip}{0pt plus 5cm}void cuif\+\_\+add\+\_\+student\+\_\+ids\+\_\+in\+\_\+header (
+\begin{DoxyParamCaption}
+\item[{{\bf cuif\+\_\+header\+\_\+t} $\ast$}]{header, }
+\item[{const uint32\+\_\+t $\ast$}]{list\+\_\+of\+\_\+ids}
+\end{DoxyParamCaption}
+)}}\label{cuif_8c_acbd01cc83095cfe1a45edfdb59cbd283}
+
+
+\{ function\+\_\+description \} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em header} & The header \\
+\hline
+\mbox{\tt in}  & {\em list\+\_\+of\+\_\+ids} & The list of identifiers \\
+\hline
+\end{DoxyParams}
+\hypertarget{cuif_8c_a633e0267ecfe86384bdcc561ab2f477d}{\index{cuif.\+c@{cuif.\+c}!cuif\+\_\+init\+\_\+header@{cuif\+\_\+init\+\_\+header}}
+\index{cuif\+\_\+init\+\_\+header@{cuif\+\_\+init\+\_\+header}!cuif.\+c@{cuif.\+c}}
+\subsubsection[{cuif\+\_\+init\+\_\+header}]{\setlength{\rightskip}{0pt plus 5cm}bool cuif\+\_\+init\+\_\+header (
+\begin{DoxyParamCaption}
+\item[{{\bf cuif\+\_\+header\+\_\+t} $\ast$}]{header, }
+\item[{uint8\+\_\+t}]{version, }
+\item[{uint8\+\_\+t}]{channels, }
+\item[{uint32\+\_\+t}]{width, }
+\item[{uint32\+\_\+t}]{height}
+\end{DoxyParamCaption}
+)}}\label{cuif_8c_a633e0267ecfe86384bdcc561ab2f477d}
+
+
+Initializes the header with the informed paramenters. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em header} & The header \\
+\hline
+\mbox{\tt in}  & {\em version} & The version \\
+\hline
+\mbox{\tt in}  & {\em width} & The width \\
+\hline
+\mbox{\tt in}  & {\em height} & The height\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the header was successfully initialized and false otherwise 
+\end{DoxyReturn}

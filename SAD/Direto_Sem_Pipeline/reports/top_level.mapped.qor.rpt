@@ -1,0 +1,112 @@
+ 
+****************************************
+Report : qor
+Design : top_level
+Version: L-2016.03-SP1
+Date   : Sat Mar 11 14:06:02 2017
+****************************************
+
+
+  Timing Path Group 'CLOCK'
+  -----------------------------------
+  Levels of Logic:              31.00
+  Critical Path Length:          1.54
+  Critical Path Slack:          12.84
+  Critical Path Clk Period:     16.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'REGIN'
+  -----------------------------------
+  Levels of Logic:               2.00
+  Critical Path Length:          0.05
+  Critical Path Slack:           4.78
+  Critical Path Clk Period:     16.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'REGOUT'
+  -----------------------------------
+  Levels of Logic:               3.00
+  Critical Path Length:          0.50
+  Critical Path Slack:           4.30
+  Critical Path Clk Period:     16.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          0
+  Hierarchical Port Count:          0
+  Leaf Cell Count:               3326
+  Buf/Inv Cell Count:             571
+  Buf Cell Count:                  25
+  Inv Cell Count:                 546
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:      2798
+  Sequential Cell Count:          528
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:     3816.414113
+  Noncombinational Area:  1880.424062
+  Buf/Inv Area:            306.583210
+  Total Buffer Area:            17.64
+  Total Inverter Area:         288.94
+  Macro/Black Box Area:      0.000000
+  Net Area:                  0.000000
+  Net XLength        :       25960.03
+  Net YLength        :       20863.23
+  -----------------------------------
+  Cell Area:              5696.838175
+  Design Area:            5696.838175
+  Net Length        :        46823.26
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          4085
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: sagittarius-a
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    2.59
+  Logic Optimization:                  3.03
+  Mapping Optimization:               14.62
+  -----------------------------------------
+  Overall Compile Time:               67.76
+  Overall Compile Wall Clock Time:    77.11
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

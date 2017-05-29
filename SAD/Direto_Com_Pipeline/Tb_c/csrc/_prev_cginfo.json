@@ -1,0 +1,126 @@
+{
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 90246
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "testbench",
+        "abs_difference"
+    ],
+    "MlibObjs": {},
+    "PrevCompiledModules": {
+        "testbench": {
+            "iAVhC_d": {
+                "mod": "testbench",
+                "bytes": 195720,
+                "archive": "archive.96/_prev_archive_1.a",
+                "mode": 4,
+                "checksum": 0,
+                "out": "iAVhC_d.o"
+            }
+        },
+        "...MASTER...": {
+            "amcQw_d": {
+                "mod": "...MASTER...",
+                "bytes": 7378,
+                "mode": 4,
+                "checksum": 0,
+                "out": "objs/amcQw_d.o"
+            }
+        },
+        "abs_difference": {
+            "yfJhQ_d": {
+                "mod": "abs_difference",
+                "bytes": 11795,
+                "archive": "archive.96/_prev_archive_1.a",
+                "mode": 4,
+                "checksum": 0,
+                "out": "yfJhQ_d.o"
+            }
+        }
+    },
+    "NameTable": {
+        "testbench": [
+            "testbench",
+            "iAVhC",
+            "module"
+        ],
+        "abs_difference": [
+            "abs_difference",
+            "yfJhQ",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ]
+    },
+    "CurCompileUdps": {},
+    "LVLData": [
+        "SIM"
+    ],
+    "CompileStrategy": "fullobj",
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.13600799999999999,
+            "ru_stime_sec": 0.048002999999999997,
+            "ru_maxrss_kb": 53896,
+            "ru_nivcsw": 89,
+            "ru_minflt": 15597,
+            "ru_nvcsw": 203
+        },
+        "ru_childs_end": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_maxrss_kb": 14328,
+            "ru_nivcsw": 15,
+            "ru_minflt": 2775,
+            "ru_nvcsw": 5
+        },
+        "ru_childs_cgstart": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_maxrss_kb": 12976,
+            "ru_nivcsw": 12,
+            "ru_minflt": 2169,
+            "ru_nvcsw": 4
+        },
+        "mop/quad": 2.782304147465438,
+        "nMops": 15094,
+        "CodeGen(%)": 35.84921679330985,
+        "nQuads": 5425,
+        "ru_self_end": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.21201300000000001,
+            "ru_stime_sec": 0.052003000000000001,
+            "ru_maxrss_kb": 60796,
+            "ru_nivcsw": 118,
+            "ru_minflt": 18473,
+            "ru_nvcsw": 204
+        },
+        "mopSpeed": 198592.19788171825,
+        "totalObjSize": 90246,
+        "quadSpeed": 71376.883099796047,
+        "outputSizePerQuad": 16.0,
+        "Frontend(%)": 64.15078320669015
+    },
+    "CompileStatus": "Successful",
+    "PEModules": [],
+    "CompileProcesses": [
+        "cgproc.26144.json"
+    ],
+    "Misc": {
+        "archive_dir": "archive.96",
+        "csrc_abs": "/home/bonotto/tests/synthesisBonotto/SAD_9-10_VCS/csrc",
+        "cwd": "/home/bonotto/tests/synthesisBonotto/SAD_9-10_VCS",
+        "daidir_abs": "/home/bonotto/tests/synthesisBonotto/SAD_9-10_VCS/simv.daidir",
+        "csrc": "csrc",
+        "daidir": "simv.daidir",
+        "default_output_dir": "csrc"
+    }
+}
