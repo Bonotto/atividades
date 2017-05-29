@@ -1,0 +1,4 @@
+WARNING: testBench.v:38: $readmemh: Standard inconsistency, following 1364-2005.
+WARNING: testBench.v:39: $readmemh: Standard inconsistency, following 1364-2005.
+WARNING: testBench.v:40: $readmemh: Standard inconsistency, following 1364-2005.
+VCD info: dumpfile wave.vcd opened for output.
